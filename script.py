@@ -1,5 +1,11 @@
-print("Lets explore the chaotic world of Numbers!")
-number = int(input("Give an integer number greater than zero: \n"))
+
+number = int(input("Give an integer number: \n"))
+
+while True:
+    if number<0:
+        number = int(input("The number should be greater than zero. Try again: \n"))
+    else:
+        break
 
 if number%2==0:
     print("The number {} is even!".format(number))
