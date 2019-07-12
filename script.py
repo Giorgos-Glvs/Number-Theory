@@ -13,4 +13,4 @@ else:
     print("The number {} is odd!".format(number))
 
 print("Have a nice day! Hope to see you again soon!")
-print("Bye!")
+print("Bye darling!")
