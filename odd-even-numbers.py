@@ -13,5 +13,4 @@ else:
     print("The number {} is odd!".format(number))
 
 print("Have a nice day! Hope to see you again soon!")
-print("Bye darling!")
-print("Geia sou")
+print("This line was added while using GitHub!!")
