@@ -7,18 +7,22 @@ while True:
     else:
         break
 
-##  Checking if the number is prime: 
-is_prime = True
-for i in range(2,number):
-    if number%i==0:
-        is_prime = False
-        break
+def is_number_prime(number):
+    '''
+    Checks whether a number is prime (returns True) or not (returns False). 
+    '''
 
-if is_prime:
-    print("The number you gave, {}, is a prime number!".format(number))
-else:
-    print("The number you gave, {}, is not a prime number!".format(number))
+    is_prime = True
+    for i in range(2,number):
+        if number%i==0:
+            is_prime = False
+            break
+    return(is_prime)
 
-print("I hope you now you are wiser in Prime numbers!")
-print("The previous line was deleted from GitHub!")
-print("To make a change, first fetch from here!")
+all_prime_numbers = list() 
+for candidate_prime in range(2, number):
+    if is_number_prime(candidate_prime):
+        all_prime_numbers.append(candidate_prime)
+
+print("Below are all the numbers that are smaller than {} and are primes: ".format(number))
+print("\t {}".format(all_prime_numbers))
