@@ -20,5 +20,5 @@ else:
     print("The number you gave, {}, is not a prime number!".format(number))
 
 print("I hope you now you are wiser in Prime numbers!")
-print("This line was added through Git, from the command line!")
-print("Goodbye!")
+print("The previous line was deleted from GitHub!")
+print("To make a change, first fetch from here!")
